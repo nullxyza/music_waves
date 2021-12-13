@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+  android:background="@drawable/phone_wall2"
+    tools:context=".player">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:gravity="center"
+            android:text="Playing from Songs"
+            android:textColor="#FBFBFB"
+            android:textSize="25sp"
+            android:layout_marginBottom="20dp"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/playlst"
+            android:background="#A1FFF9F9"
+            />
+
+
+        <TextView
+            android:id="@+id/sname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Song Name"
+            android:textSize="35dp"
+            android:textColor="#E8E8EC"
+            android:layout_marginBottom="40dp"
+            android:gravity="center"/>
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:background="#4FFBFBFB"
+            android:progressTint="#D12346"
+            android:thumbTint="#D1235A"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:backgroundTint="#4CAF50"
+                android:clickable="true"
+                android:onClick="playbtn"
+                android:src="@drawable/play"
+                app:tint="@color/white" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_pause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="pausebtn"
+                android:backgroundTint="#4CAF50"
+                app:tint="@color/white"
+                android:src="@drawable/pause" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fsb_stop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="stopbtn"
+                android:backgroundTint="#4CAF50"
+                app:tint="@color/white"
+                android:src="@drawable/stop" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

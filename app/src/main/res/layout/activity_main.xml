@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  android:background="@drawable/phone_wall2"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="Playlists"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:layout_weight="1"
+            android:src="@drawable/chilmix"
+            android:background="#5C333131"
+           />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="Developer - Don Milton" />
+
+        <ListView
+            android:id="@+id/songlist"
+            android:layout_width="match_parent"
+            android:layout_height="437dp"
+            android:background="#4B5A5A5A"
+            android:layout_weight="3">
+
+        </ListView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+
+
+
+
+

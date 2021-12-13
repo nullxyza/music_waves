@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="PrimaryActionButton" parent="Theme.AppCompat.Light">
+    <item name="colorAccent">#0C70F8</item>
+</style>
+</resources>
